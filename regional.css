@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#ffe8ce;
+}
+
+.header {
+    width: 100%;
+}
+.header img {
+    width: 100%;
+    max-width:100%;
+    display: block;
+}
+
+.navbar {
+    background: #e63d24;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width:100%;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffe8ce;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.nav-links a:hover {
+    background: #f792c4
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 26px;
+    padding: 10px 0;
+    list-style: none;
+    background:  #ffe8ce;
+    border-radius: 8px;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.dropdown-menu li a {
+    color: #5f32f3;
+    display: block;
+    padding: 10px 15px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  gap: 20px;
+  background: #d54b1a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba (0,0,0,0.1);
+}
+
+.box1{
+    background:#f3bb40;
+}
+
+.box2{
+    background:#e63d24;
+    color:#f0ecc9;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+.row img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  outline:3px solid #038b47;
+  outline-offset: 3px;
+}
+
+.deskripsi {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.layout-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0; 
+}
+
+.sidebar {
+    width: 250px;
+    height:2500px;
+    background: #038b47;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;  
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 14px 16px;
+    background: #ffe8ce;
+    border-radius: 10px;
+    color: #038b47;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #f792c4;
+    color:#f0ecc9;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content {
+    padding: 0 40px;
+}
+
+.regional-intro {
+    background: #eafff0;
+    padding: 18px 25px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.regional-gallery {
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.regional-gallery img {
+    flex: 1;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.regional-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    gap: 20px;
+}
+
+.reg-text {
+    flex: 1;
+}
+
+.reg-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.reg-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* FOTO DI KANAN */
+.reg-side-img {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .regional-gallery {
+        flex-direction: column;
+    }
+
+    .regional-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reg-side-img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+.header{
+    width:100%;
+    position: relative;
+    z-index: 1;
+}
+
+.header img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.layout-wrapper {
+    display: flex;
+    gap: 40px;         
+    margin-top: -20px;  
+}
+
+.content {
+    padding: 0 40px;
+    max-width: 830px;   
+    margin-left: 20px;
+}
