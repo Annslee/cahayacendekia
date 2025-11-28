@@ -1,0 +1,127 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#b9ebe8;
+}
+
+.header {
+    width: 100%;
+}
+.header img {
+    width: 100%;
+    max-width:100%;
+    display: block;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #e63d24;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width:100%;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffe8ce;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.nav-links a:hover {
+    background: #f792c4
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 26px;
+    padding: 10px 0;
+    list-style: none;
+    background:  #ffe8ce;
+    border-radius: 8px;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.dropdown-menu li a {
+    color: #5f32f3;
+    display: block;
+    padding: 10px 15px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.pendahuluan {
+    padding: 10px 20px 35px 20px;
+    text-align: center;
+}
+
+.pendahuluan h1 {
+    font-size: 25px;
+    color: #003b80;
+    margin-bottom: 10px;
+}
+
+.pendahuluan h2 {
+    font-size: 20px;
+    color: #003b80;
+    margin-bottom: 30px;
+}
+
+.pendahuluan-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background:#ffe8ce;
+    padding:20px;
+    border-radius: 15px;
+    border: 2px solid #f5bc40;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    max-width: 1150px;
+    margin: 0 auto; 
+}
+
+.pendahuluan-text {
+    flex: 1;
+}
+
+.pendahuluan-text p {
+    font-size: 16px;
+    color: #004aad;
+    text-align: justify;
+}
+
+.pendahuluan-img {
+    width: 200px;
+    height: 160px;
+    border:2px solid #e33f2c;
+    border-radius: 12px;
+    object-fit: cover;
+}
