@@ -16,8 +16,6 @@ body {
     max-width:100%;
     display: block;
 }
-
-/* NAVBAR */
 .navbar {
     background: #e63d24;
     padding: 15px 40px;
@@ -49,8 +47,6 @@ body {
 .nav-links a:hover {
     background: #f792c4
 }
-
-/* DROPDOWN */
 .dropdown {
     position: relative;
 }
@@ -124,4 +120,5 @@ body {
     border:2px solid #e33f2c;
     border-radius: 12px;
     object-fit: cover;
+
 }
